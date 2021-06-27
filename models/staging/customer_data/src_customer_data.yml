@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: customer_database
+    description: Some dummy data I stole from Microsofts Northwinds sample datasets.
+    database: test_raw
+    schema: public
+    tables:
+      - name: customers
+      - name: orders
+      - name: employees
+      - name: products
+      - name: categories
+      - name: order_details
