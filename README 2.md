@@ -1,1 +1,0 @@
-# dbt_sandbox_snowflake

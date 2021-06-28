@@ -1,0 +1,10 @@
+
+    
+    create table test_dbt.public.regions (RegionID integer,RegionDescription text)
+  ;
+    -- dbt seed --
+    
+            insert into test_dbt.public.regions (RegionID, RegionDescription) values
+            (%s,%s),(%s,%s),(%s,%s),(%s,%s)
+        
+  

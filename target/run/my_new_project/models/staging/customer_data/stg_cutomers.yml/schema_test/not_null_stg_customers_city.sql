@@ -4,8 +4,14 @@ select
       count(*) != 0 as should_error
     from (
       
-        select *
-        from test_dbt.public_dbt_test__audit.not_null_stg_customers_city
     
+    
+
+select *
+from test_dbt.public.stg_customers
+where city is null
+
+
+
       
     ) dbt_internal_test

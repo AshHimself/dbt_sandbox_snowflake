@@ -5359,3 +5359,677 @@ select
 Done. PASS=1 WARN=0 ERROR=2 SKIP=0 TOTAL=3
 2021-06-26 09:10:32.246300 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112089eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1123b5c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1123b5fd0>]}
 2021-06-26 09:10:32.246573 (MainThread): Flushing usage events
+2021-06-27 09:31:24.530593 (MainThread): Running with dbt=0.20.0-rc1
+2021-06-27 09:31:25.279070 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, defer=None, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/ashsmith/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', selector_name=None, show=False, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2021-06-27 09:31:25.285689 (MainThread): Tracking: tracking
+2021-06-27 09:31:25.285957 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e240a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f5dbca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f5dbd30>]}
+2021-06-27 09:31:25.296139 (MainThread): Partial parsing not enabled
+2021-06-27 09:31:25.309036 (MainThread): Parsing macros/catalog.sql
+2021-06-27 09:31:25.310953 (MainThread): Parsing macros/adapters.sql
+2021-06-27 09:31:25.333528 (MainThread): Parsing macros/materializations/merge.sql
+2021-06-27 09:31:25.334925 (MainThread): Parsing macros/materializations/view.sql
+2021-06-27 09:31:25.335867 (MainThread): Parsing macros/materializations/table.sql
+2021-06-27 09:31:25.338651 (MainThread): Parsing macros/materializations/incremental.sql
+2021-06-27 09:31:25.345213 (MainThread): Parsing macros/core.sql
+2021-06-27 09:31:25.347908 (MainThread): Parsing macros/materializations/test.sql
+2021-06-27 09:31:25.351783 (MainThread): Parsing macros/materializations/helpers.sql
+2021-06-27 09:31:25.358972 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-06-27 09:31:25.360108 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-06-27 09:31:25.373034 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-06-27 09:31:25.400241 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-06-27 09:31:25.416463 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-06-27 09:31:25.417690 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-06-27 09:31:25.423413 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-06-27 09:31:25.434150 (MainThread): Parsing macros/materializations/table/table.sql
+2021-06-27 09:31:25.439587 (MainThread): Parsing macros/materializations/view/view.sql
+2021-06-27 09:31:25.444257 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-06-27 09:31:25.447711 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-06-27 09:31:25.448288 (MainThread): Parsing macros/etc/query.sql
+2021-06-27 09:31:25.448909 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-06-27 09:31:25.449967 (MainThread): Parsing macros/etc/datetime.sql
+2021-06-27 09:31:25.456453 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-06-27 09:31:25.457736 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-06-27 09:31:25.458786 (MainThread): Parsing macros/adapters/common.sql
+2021-06-27 09:31:25.493852 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-06-27 09:31:25.495032 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-06-27 09:31:25.495780 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-06-27 09:31:25.496643 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-06-27 09:31:25.614750 (MainThread): Acquiring new snowflake connection "model.my_new_project.stg_customers".
+2021-06-27 09:31:25.621436 (MainThread): Acquiring new snowflake connection "model.my_new_project.stg_order_details".
+2021-06-27 09:31:25.623786 (MainThread): Acquiring new snowflake connection "model.my_new_project.stg_orders".
+2021-06-27 09:31:25.625858 (MainThread): Acquiring new snowflake connection "model.my_new_project.customer_orders".
+2021-06-27 09:31:25.635123 (MainThread): Acquiring new snowflake connection "test.my_new_project.assert_city_exists".
+2021-06-27 09:31:25.636771 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-06-27 09:31:25.659686 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-06-27 09:31:25.660876 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-06-27 09:31:25.677022 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2021-06-27 09:31:25.681028 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0ba0f456-1317-44dd-bbed-8e4527cfa9f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f70c760>]}
+2021-06-27 09:31:25.685501 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0ba0f456-1317-44dd-bbed-8e4527cfa9f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f680190>]}
+2021-06-27 09:31:25.685643 (MainThread): Found 4 models, 3 tests, 0 snapshots, 0 analyses, 149 macros, 0 operations, 1 seed file, 6 sources, 0 exposures
+2021-06-27 09:31:25.686425 (MainThread): 
+2021-06-27 09:31:25.686593 (MainThread): Acquiring new snowflake connection "master".
+2021-06-27 09:31:25.687151 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_test_dbt".
+2021-06-27 09:31:25.696519 (ThreadPoolExecutor-0_0): Using snowflake connection "list_test_dbt".
+2021-06-27 09:31:25.696598 (ThreadPoolExecutor-0_0): On list_test_dbt: /* {"app": "dbt", "dbt_version": "0.20.0rc1", "profile_name": "default", "target_name": "dev", "connection_name": "list_test_dbt"} */
+
+    show terse schemas in database test_dbt
+    limit 10000
+2021-06-27 09:31:25.696652 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-06-27 09:31:26.839609 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 3 in 1.14 seconds
+2021-06-27 09:31:26.848319 (ThreadPoolExecutor-0_0): On list_test_dbt: Close
+2021-06-27 09:31:27.061336 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_test_dbt_public".
+2021-06-27 09:31:27.073542 (ThreadPoolExecutor-1_0): Using snowflake connection "list_test_dbt_public".
+2021-06-27 09:31:27.073712 (ThreadPoolExecutor-1_0): On list_test_dbt_public: /* {"app": "dbt", "dbt_version": "0.20.0rc1", "profile_name": "default", "target_name": "dev", "connection_name": "list_test_dbt_public"} */
+
+    show terse objects in test_dbt.public
+2021-06-27 09:31:27.073857 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-06-27 09:31:27.921908 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 6 in 0.85 seconds
+2021-06-27 09:31:27.927794 (ThreadPoolExecutor-1_0): On list_test_dbt_public: Close
+2021-06-27 09:31:28.131278 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_test_dbt_public_dbt_test__audit".
+2021-06-27 09:31:28.135094 (ThreadPoolExecutor-1_0): Using snowflake connection "list_test_dbt_public_dbt_test__audit".
+2021-06-27 09:31:28.135272 (ThreadPoolExecutor-1_0): On list_test_dbt_public_dbt_test__audit: /* {"app": "dbt", "dbt_version": "0.20.0rc1", "profile_name": "default", "target_name": "dev", "connection_name": "list_test_dbt_public_dbt_test__audit"} */
+
+    show terse objects in test_dbt.public_dbt_test__audit
+2021-06-27 09:31:28.135427 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-06-27 09:31:28.737588 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 0.60 seconds
+2021-06-27 09:31:28.739294 (ThreadPoolExecutor-1_0): On list_test_dbt_public_dbt_test__audit: Close
+2021-06-27 09:31:28.935495 (MainThread): Using snowflake connection "master".
+2021-06-27 09:31:28.935820 (MainThread): On master: BEGIN
+2021-06-27 09:31:28.936021 (MainThread): Opening a new connection, currently in state init
+2021-06-27 09:31:29.535095 (MainThread): SQL status: SUCCESS 1 in 0.60 seconds
+2021-06-27 09:31:29.536126 (MainThread): On master: COMMIT
+2021-06-27 09:31:29.536727 (MainThread): Using snowflake connection "master".
+2021-06-27 09:31:29.537032 (MainThread): On master: COMMIT
+2021-06-27 09:31:29.718371 (MainThread): SQL status: SUCCESS 1 in 0.18 seconds
+2021-06-27 09:31:29.718850 (MainThread): On master: Close
+2021-06-27 09:31:29.899169 (MainThread): 17:31:29 | Concurrency: 1 threads (target='dev')
+2021-06-27 09:31:29.899491 (MainThread): 17:31:29 | 
+2021-06-27 09:31:29.902475 (Thread-1): Began running node seed.my_new_project.regions
+2021-06-27 09:31:29.903582 (Thread-1): 17:31:29 | 1 of 1 START seed file public.regions................................ [RUN]
+2021-06-27 09:31:29.904523 (Thread-1): Acquiring new snowflake connection "seed.my_new_project.regions".
+2021-06-27 09:31:29.904782 (Thread-1): finished collecting timing info
+2021-06-27 09:31:29.948416 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-06-27 09:31:29.948738 (Thread-1): * Deprecation Warning: The quote_columns parameter was not set for seeds, so the
+default value of False was chosen. The default will change to True in a future
+release.
+
+For more information, see:
+https://docs.getdbt.com/v0.15/docs/seeds#section-specify-column-quoting
+2021-06-27 09:31:29.948830 (Thread-1): Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '0ba0f456-1317-44dd-bbed-8e4527cfa9f7', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1139a10d0>]}
+2021-06-27 09:31:29.949271 (Thread-1): Using snowflake connection "seed.my_new_project.regions".
+2021-06-27 09:31:29.949329 (Thread-1): On seed.my_new_project.regions: BEGIN
+2021-06-27 09:31:29.949389 (Thread-1): Opening a new connection, currently in state closed
+2021-06-27 09:31:30.548867 (Thread-1): SQL status: SUCCESS 1 in 0.60 seconds
+2021-06-27 09:31:30.549525 (Thread-1): Using snowflake connection "seed.my_new_project.regions".
+2021-06-27 09:31:30.549831 (Thread-1): On seed.my_new_project.regions: /* {"app": "dbt", "dbt_version": "0.20.0rc1", "profile_name": "default", "target_name": "dev", "node_id": "seed.my_new_project.regions"} */
+
+    create table test_dbt.public.regions (RegionID|RegionDescription text)
+2021-06-27 09:31:30.675197 (Thread-1): Snowflake query id: 019d345b-3200-5156-0000-65a90002d742
+2021-06-27 09:31:30.675470 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 1 at position 46 unexpected '|'.
+2021-06-27 09:31:30.675905 (Thread-1): finished collecting timing info
+2021-06-27 09:31:30.676200 (Thread-1): On seed.my_new_project.regions: ROLLBACK
+2021-06-27 09:31:30.851121 (Thread-1): On seed.my_new_project.regions: Close
+2021-06-27 09:31:31.029479 (Thread-1): Database Error in seed regions (data/regions.csv)
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 46 unexpected '|'.
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 693, in execute
+    Error.errorhandler_wrapper(
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 1 at position 46 unexpected '|'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 75, in macro
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 21, in macro
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 68, in macro
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 333, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/usr/local/Cellar/python@3.8/3.8.10/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 196, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in seed regions (data/regions.csv)
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 46 unexpected '|'.
+2021-06-27 09:31:31.032472 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ba0f456-1317-44dd-bbed-8e4527cfa9f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1139d9c40>]}
+2021-06-27 09:31:31.032959 (Thread-1): 17:31:31 | 1 of 1 ERROR loading seed file public.regions........................ [ERROR in 1.13s]
+2021-06-27 09:31:31.033201 (Thread-1): Finished running node seed.my_new_project.regions
+2021-06-27 09:31:31.036810 (MainThread): Acquiring new snowflake connection "master".
+2021-06-27 09:31:31.037291 (MainThread): Using snowflake connection "master".
+2021-06-27 09:31:31.037429 (MainThread): On master: BEGIN
+2021-06-27 09:31:31.037574 (MainThread): Opening a new connection, currently in state closed
+2021-06-27 09:31:31.651967 (MainThread): SQL status: SUCCESS 1 in 0.61 seconds
+2021-06-27 09:31:31.653061 (MainThread): On master: COMMIT
+2021-06-27 09:31:31.653693 (MainThread): Using snowflake connection "master".
+2021-06-27 09:31:31.654009 (MainThread): On master: COMMIT
+2021-06-27 09:31:31.854170 (MainThread): SQL status: SUCCESS 1 in 0.20 seconds
+2021-06-27 09:31:31.854535 (MainThread): On master: Close
+2021-06-27 09:31:32.059802 (MainThread): 17:31:32 | 
+2021-06-27 09:31:32.060264 (MainThread): 17:31:32 | Finished running 1 seed in 6.37s.
+2021-06-27 09:31:32.060574 (MainThread): Connection 'master' was properly closed.
+2021-06-27 09:31:32.060722 (MainThread): Connection 'seed.my_new_project.regions' was properly closed.
+2021-06-27 09:31:32.074007 (MainThread): 
+2021-06-27 09:31:32.074415 (MainThread): Completed with 1 error and 0 warnings:
+2021-06-27 09:31:32.074668 (MainThread): 
+2021-06-27 09:31:32.074877 (MainThread): Database Error in seed regions (data/regions.csv)
+2021-06-27 09:31:32.075044 (MainThread):   001003 (42000): SQL compilation error:
+2021-06-27 09:31:32.075199 (MainThread):   syntax error line 1 at position 46 unexpected '|'.
+2021-06-27 09:31:32.075365 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2021-06-27 09:31:32.075674 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f731eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f6d63d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1139cef10>]}
+2021-06-27 09:31:32.076235 (MainThread): Flushing usage events
+2021-06-27 09:37:50.994050 (MainThread): Running with dbt=0.20.0-rc1
+2021-06-27 09:37:51.571246 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, defer=None, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/ashsmith/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', selector_name=None, show=False, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2021-06-27 09:37:51.572158 (MainThread): Tracking: tracking
+2021-06-27 09:37:51.572457 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10efa7d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11031ca00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11031ca90>]}
+2021-06-27 09:37:51.583610 (MainThread): Partial parsing not enabled
+2021-06-27 09:37:51.598188 (MainThread): Parsing macros/catalog.sql
+2021-06-27 09:37:51.600579 (MainThread): Parsing macros/adapters.sql
+2021-06-27 09:37:51.623176 (MainThread): Parsing macros/materializations/merge.sql
+2021-06-27 09:37:51.624624 (MainThread): Parsing macros/materializations/view.sql
+2021-06-27 09:37:51.625581 (MainThread): Parsing macros/materializations/table.sql
+2021-06-27 09:37:51.628384 (MainThread): Parsing macros/materializations/incremental.sql
+2021-06-27 09:37:51.634941 (MainThread): Parsing macros/core.sql
+2021-06-27 09:37:51.637653 (MainThread): Parsing macros/materializations/test.sql
+2021-06-27 09:37:51.641509 (MainThread): Parsing macros/materializations/helpers.sql
+2021-06-27 09:37:51.648727 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-06-27 09:37:51.649875 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-06-27 09:37:51.662772 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-06-27 09:37:51.689902 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-06-27 09:37:51.705986 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-06-27 09:37:51.707214 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-06-27 09:37:51.713053 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-06-27 09:37:51.723925 (MainThread): Parsing macros/materializations/table/table.sql
+2021-06-27 09:37:51.729696 (MainThread): Parsing macros/materializations/view/view.sql
+2021-06-27 09:37:51.734657 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-06-27 09:37:51.738418 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-06-27 09:37:51.739103 (MainThread): Parsing macros/etc/query.sql
+2021-06-27 09:37:51.739782 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-06-27 09:37:51.740911 (MainThread): Parsing macros/etc/datetime.sql
+2021-06-27 09:37:51.748372 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-06-27 09:37:51.749881 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-06-27 09:37:51.751028 (MainThread): Parsing macros/adapters/common.sql
+2021-06-27 09:37:51.788227 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-06-27 09:37:51.789547 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-06-27 09:37:51.790366 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-06-27 09:37:51.791324 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-06-27 09:37:51.916577 (MainThread): Acquiring new snowflake connection "model.my_new_project.stg_customers".
+2021-06-27 09:37:51.923521 (MainThread): Acquiring new snowflake connection "model.my_new_project.stg_order_details".
+2021-06-27 09:37:51.926046 (MainThread): Acquiring new snowflake connection "model.my_new_project.stg_orders".
+2021-06-27 09:37:51.928281 (MainThread): Acquiring new snowflake connection "model.my_new_project.customer_orders".
+2021-06-27 09:37:51.937571 (MainThread): Acquiring new snowflake connection "test.my_new_project.assert_city_exists".
+2021-06-27 09:37:51.939243 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-06-27 09:37:51.962740 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-06-27 09:37:51.963974 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-06-27 09:37:51.980195 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2021-06-27 09:37:51.983904 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3f25ead0-8817-46b8-97ee-34acfb515aa5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1104234c0>]}
+2021-06-27 09:37:51.987723 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3f25ead0-8817-46b8-97ee-34acfb515aa5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11040cdf0>]}
+2021-06-27 09:37:51.987858 (MainThread): Found 4 models, 3 tests, 0 snapshots, 0 analyses, 149 macros, 0 operations, 1 seed file, 6 sources, 0 exposures
+2021-06-27 09:37:51.988682 (MainThread): 
+2021-06-27 09:37:51.988855 (MainThread): Acquiring new snowflake connection "master".
+2021-06-27 09:37:51.989442 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_test_dbt".
+2021-06-27 09:37:51.998903 (ThreadPoolExecutor-0_0): Using snowflake connection "list_test_dbt".
+2021-06-27 09:37:51.998992 (ThreadPoolExecutor-0_0): On list_test_dbt: /* {"app": "dbt", "dbt_version": "0.20.0rc1", "profile_name": "default", "target_name": "dev", "connection_name": "list_test_dbt"} */
+
+    show terse schemas in database test_dbt
+    limit 10000
+2021-06-27 09:37:51.999045 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-06-27 09:37:53.059587 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 3 in 1.06 seconds
+2021-06-27 09:37:53.067740 (ThreadPoolExecutor-0_0): On list_test_dbt: Close
+2021-06-27 09:37:53.264444 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_test_dbt_public".
+2021-06-27 09:37:53.283542 (ThreadPoolExecutor-1_0): Using snowflake connection "list_test_dbt_public".
+2021-06-27 09:37:53.283906 (ThreadPoolExecutor-1_0): On list_test_dbt_public: /* {"app": "dbt", "dbt_version": "0.20.0rc1", "profile_name": "default", "target_name": "dev", "connection_name": "list_test_dbt_public"} */
+
+    show terse objects in test_dbt.public
+2021-06-27 09:37:53.284096 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-06-27 09:37:54.087028 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 6 in 0.80 seconds
+2021-06-27 09:37:54.089881 (ThreadPoolExecutor-1_0): On list_test_dbt_public: Close
+2021-06-27 09:37:54.280860 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_test_dbt_public_dbt_test__audit".
+2021-06-27 09:37:54.285284 (ThreadPoolExecutor-1_0): Using snowflake connection "list_test_dbt_public_dbt_test__audit".
+2021-06-27 09:37:54.285626 (ThreadPoolExecutor-1_0): On list_test_dbt_public_dbt_test__audit: /* {"app": "dbt", "dbt_version": "0.20.0rc1", "profile_name": "default", "target_name": "dev", "connection_name": "list_test_dbt_public_dbt_test__audit"} */
+
+    show terse objects in test_dbt.public_dbt_test__audit
+2021-06-27 09:37:54.285791 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-06-27 09:37:54.895690 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 0.61 seconds
+2021-06-27 09:37:54.897301 (ThreadPoolExecutor-1_0): On list_test_dbt_public_dbt_test__audit: Close
+2021-06-27 09:37:55.097655 (MainThread): Using snowflake connection "master".
+2021-06-27 09:37:55.098447 (MainThread): On master: BEGIN
+2021-06-27 09:37:55.098755 (MainThread): Opening a new connection, currently in state init
+2021-06-27 09:37:55.757928 (MainThread): SQL status: SUCCESS 1 in 0.66 seconds
+2021-06-27 09:37:55.758332 (MainThread): On master: COMMIT
+2021-06-27 09:37:55.758596 (MainThread): Using snowflake connection "master".
+2021-06-27 09:37:55.758752 (MainThread): On master: COMMIT
+2021-06-27 09:37:55.945891 (MainThread): SQL status: SUCCESS 1 in 0.19 seconds
+2021-06-27 09:37:55.946709 (MainThread): On master: Close
+2021-06-27 09:37:56.133749 (MainThread): 17:37:56 | Concurrency: 1 threads (target='dev')
+2021-06-27 09:37:56.134605 (MainThread): 17:37:56 | 
+2021-06-27 09:37:56.137965 (Thread-1): Began running node seed.my_new_project.regions
+2021-06-27 09:37:56.138880 (Thread-1): 17:37:56 | 1 of 1 START seed file public.regions................................ [RUN]
+2021-06-27 09:37:56.139638 (Thread-1): Acquiring new snowflake connection "seed.my_new_project.regions".
+2021-06-27 09:37:56.139978 (Thread-1): finished collecting timing info
+2021-06-27 09:37:56.184162 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-06-27 09:37:56.184432 (Thread-1): * Deprecation Warning: The quote_columns parameter was not set for seeds, so the
+default value of False was chosen. The default will change to True in a future
+release.
+
+For more information, see:
+https://docs.getdbt.com/v0.15/docs/seeds#section-specify-column-quoting
+2021-06-27 09:37:56.184516 (Thread-1): Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '3f25ead0-8817-46b8-97ee-34acfb515aa5', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110729190>]}
+2021-06-27 09:37:56.184662 (Thread-1): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-06-27 09:37:56.185004 (Thread-1): Using snowflake connection "seed.my_new_project.regions".
+2021-06-27 09:37:56.185051 (Thread-1): On seed.my_new_project.regions: BEGIN
+2021-06-27 09:37:56.185101 (Thread-1): Opening a new connection, currently in state closed
+2021-06-27 09:37:56.780880 (Thread-1): SQL status: SUCCESS 1 in 0.60 seconds
+2021-06-27 09:37:56.781741 (Thread-1): Using snowflake connection "seed.my_new_project.regions".
+2021-06-27 09:37:56.782047 (Thread-1): On seed.my_new_project.regions: /* {"app": "dbt", "dbt_version": "0.20.0rc1", "profile_name": "default", "target_name": "dev", "node_id": "seed.my_new_project.regions"} */
+
+    create table test_dbt.public.regions (RegionID integer,RegionDescription text)
+2021-06-27 09:37:57.083100 (Thread-1): SQL status: SUCCESS 1 in 0.30 seconds
+2021-06-27 09:37:57.111665 (Thread-1): Using snowflake connection "seed.my_new_project.regions".
+2021-06-27 09:37:57.111817 (Thread-1): On seed.my_new_project.regions: insert into test_dbt.public.regions (RegionID, RegionDescription) values
+            (%s,%s),(%s,%s),(%s,%s),(%s,%s)...
+2021-06-27 09:37:57.917231 (Thread-1): SQL status: SUCCESS 4 in 0.81 seconds
+2021-06-27 09:37:57.930557 (Thread-1): Writing runtime SQL for node "seed.my_new_project.regions"
+2021-06-27 09:37:57.955527 (Thread-1): On seed.my_new_project.regions: COMMIT
+2021-06-27 09:37:57.955908 (Thread-1): Using snowflake connection "seed.my_new_project.regions".
+2021-06-27 09:37:57.956034 (Thread-1): On seed.my_new_project.regions: COMMIT
+2021-06-27 09:37:58.229735 (Thread-1): SQL status: SUCCESS 1 in 0.27 seconds
+2021-06-27 09:37:58.231256 (Thread-1): finished collecting timing info
+2021-06-27 09:37:58.231499 (Thread-1): On seed.my_new_project.regions: Close
+2021-06-27 09:37:58.451309 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3f25ead0-8817-46b8-97ee-34acfb515aa5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110722670>]}
+2021-06-27 09:37:58.451893 (Thread-1): 17:37:58 | 1 of 1 OK loaded seed file public.regions............................ [INSERT 4 in 2.31s]
+2021-06-27 09:37:58.452137 (Thread-1): Finished running node seed.my_new_project.regions
+2021-06-27 09:37:58.454485 (MainThread): Acquiring new snowflake connection "master".
+2021-06-27 09:37:58.454873 (MainThread): Using snowflake connection "master".
+2021-06-27 09:37:58.455006 (MainThread): On master: BEGIN
+2021-06-27 09:37:58.455149 (MainThread): Opening a new connection, currently in state closed
+2021-06-27 09:37:59.065088 (MainThread): SQL status: SUCCESS 1 in 0.61 seconds
+2021-06-27 09:37:59.065869 (MainThread): On master: COMMIT
+2021-06-27 09:37:59.066447 (MainThread): Using snowflake connection "master".
+2021-06-27 09:37:59.066744 (MainThread): On master: COMMIT
+2021-06-27 09:37:59.274755 (MainThread): SQL status: SUCCESS 1 in 0.21 seconds
+2021-06-27 09:37:59.275141 (MainThread): On master: Close
+2021-06-27 09:37:59.452125 (MainThread): 17:37:59 | 
+2021-06-27 09:37:59.452614 (MainThread): 17:37:59 | Finished running 1 seed in 7.46s.
+2021-06-27 09:37:59.452912 (MainThread): Connection 'master' was properly closed.
+2021-06-27 09:37:59.453302 (MainThread): Connection 'seed.my_new_project.regions' was properly closed.
+2021-06-27 09:37:59.465530 (MainThread): 
+2021-06-27 09:37:59.465860 (MainThread): Completed successfully
+2021-06-27 09:37:59.466130 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2021-06-27 09:37:59.466632 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11048ecd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1107116a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110711490>]}
+2021-06-27 09:37:59.467041 (MainThread): Flushing usage events
+2021-06-28 13:26:06.476735 (MainThread): Running with dbt=0.20.0-rc1
+2021-06-28 13:26:07.007850 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, defer=None, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/ashsmith/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, selector_name=None, single_threaded=False, state=None, store_failures=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2021-06-28 13:26:07.009046 (MainThread): Tracking: tracking
+2021-06-28 13:26:07.009330 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11054bfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1118e3b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1118e3be0>]}
+2021-06-28 13:26:07.020026 (MainThread): Partial parsing not enabled
+2021-06-28 13:26:07.032647 (MainThread): Parsing macros/catalog.sql
+2021-06-28 13:26:07.034578 (MainThread): Parsing macros/adapters.sql
+2021-06-28 13:26:07.056937 (MainThread): Parsing macros/materializations/merge.sql
+2021-06-28 13:26:07.058325 (MainThread): Parsing macros/materializations/view.sql
+2021-06-28 13:26:07.059259 (MainThread): Parsing macros/materializations/table.sql
+2021-06-28 13:26:07.062006 (MainThread): Parsing macros/materializations/incremental.sql
+2021-06-28 13:26:07.068472 (MainThread): Parsing macros/core.sql
+2021-06-28 13:26:07.071133 (MainThread): Parsing macros/materializations/test.sql
+2021-06-28 13:26:07.074952 (MainThread): Parsing macros/materializations/helpers.sql
+2021-06-28 13:26:07.082197 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-06-28 13:26:07.083404 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-06-28 13:26:07.096326 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-06-28 13:26:07.123503 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-06-28 13:26:07.139572 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-06-28 13:26:07.140793 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-06-28 13:26:07.146409 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-06-28 13:26:07.157209 (MainThread): Parsing macros/materializations/table/table.sql
+2021-06-28 13:26:07.162539 (MainThread): Parsing macros/materializations/view/view.sql
+2021-06-28 13:26:07.167186 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-06-28 13:26:07.170578 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-06-28 13:26:07.171140 (MainThread): Parsing macros/etc/query.sql
+2021-06-28 13:26:07.171760 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-06-28 13:26:07.172815 (MainThread): Parsing macros/etc/datetime.sql
+2021-06-28 13:26:07.179249 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-06-28 13:26:07.180523 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-06-28 13:26:07.181576 (MainThread): Parsing macros/adapters/common.sql
+2021-06-28 13:26:07.216550 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-06-28 13:26:07.217712 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-06-28 13:26:07.218459 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-06-28 13:26:07.219362 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-06-28 13:26:07.337671 (MainThread): Acquiring new snowflake connection "model.my_new_project.stg_customers".
+2021-06-28 13:26:07.344386 (MainThread): Acquiring new snowflake connection "model.my_new_project.stg_order_details".
+2021-06-28 13:26:07.346698 (MainThread): Acquiring new snowflake connection "model.my_new_project.stg_orders".
+2021-06-28 13:26:07.348788 (MainThread): Acquiring new snowflake connection "model.my_new_project.customer_orders".
+2021-06-28 13:26:07.357978 (MainThread): Acquiring new snowflake connection "test.my_new_project.assert_city_exists".
+2021-06-28 13:26:07.359612 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-06-28 13:26:07.375536 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-06-28 13:26:07.376731 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-06-28 13:26:07.393599 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2021-06-28 13:26:07.397220 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5f17ded0-086f-40c4-b425-88cf0351f8e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1119f7d60>]}
+2021-06-28 13:26:07.401460 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5f17ded0-086f-40c4-b425-88cf0351f8e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111972f10>]}
+2021-06-28 13:26:07.401600 (MainThread): Found 4 models, 3 tests, 0 snapshots, 0 analyses, 149 macros, 0 operations, 0 seed files, 6 sources, 0 exposures
+2021-06-28 13:26:07.402367 (MainThread): 
+2021-06-28 13:26:07.402534 (MainThread): Acquiring new snowflake connection "master".
+2021-06-28 13:26:07.403332 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_test_dbt_public_dbt_test__audit".
+2021-06-28 13:26:07.411770 (ThreadPoolExecutor-1_0): Using snowflake connection "list_test_dbt_public_dbt_test__audit".
+2021-06-28 13:26:07.411828 (ThreadPoolExecutor-1_0): On list_test_dbt_public_dbt_test__audit: /* {"app": "dbt", "dbt_version": "0.20.0rc1", "profile_name": "default", "target_name": "dev", "connection_name": "list_test_dbt_public_dbt_test__audit"} */
+
+    show terse objects in test_dbt.public_dbt_test__audit
+2021-06-28 13:26:07.411879 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-06-28 13:26:12.459611 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 5.05 seconds
+2021-06-28 13:26:12.473889 (ThreadPoolExecutor-1_0): On list_test_dbt_public_dbt_test__audit: Close
+2021-06-28 13:26:12.723738 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_test_dbt_public".
+2021-06-28 13:26:12.732431 (ThreadPoolExecutor-1_0): Using snowflake connection "list_test_dbt_public".
+2021-06-28 13:26:12.732923 (ThreadPoolExecutor-1_0): On list_test_dbt_public: /* {"app": "dbt", "dbt_version": "0.20.0rc1", "profile_name": "default", "target_name": "dev", "connection_name": "list_test_dbt_public"} */
+
+    show terse objects in test_dbt.public
+2021-06-28 13:26:12.733148 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-06-28 13:26:13.549663 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 0.82 seconds
+2021-06-28 13:26:13.554383 (ThreadPoolExecutor-1_0): On list_test_dbt_public: Close
+2021-06-28 13:26:13.827402 (MainThread): 21:26:13 | Concurrency: 1 threads (target='dev')
+2021-06-28 13:26:13.828233 (MainThread): 21:26:13 | 
+2021-06-28 13:26:13.831396 (Thread-1): Began running node test.my_new_project.assert_city_exists
+2021-06-28 13:26:13.831918 (Thread-1): 21:26:13 | 1 of 3 START test assert_city_exists................................. [RUN]
+2021-06-28 13:26:13.832597 (Thread-1): Acquiring new snowflake connection "test.my_new_project.assert_city_exists".
+2021-06-28 13:26:13.833025 (Thread-1): Compiling test.my_new_project.assert_city_exists
+2021-06-28 13:26:13.840802 (Thread-1): Writing injected SQL for node "test.my_new_project.assert_city_exists"
+2021-06-28 13:26:13.844593 (Thread-1): finished collecting timing info
+2021-06-28 13:26:13.869285 (Thread-1): Writing runtime SQL for node "test.my_new_project.assert_city_exists"
+2021-06-28 13:26:13.870963 (Thread-1): Using snowflake connection "test.my_new_project.assert_city_exists".
+2021-06-28 13:26:13.871102 (Thread-1): On test.my_new_project.assert_city_exists: BEGIN
+2021-06-28 13:26:13.871211 (Thread-1): Opening a new connection, currently in state closed
+2021-06-28 13:26:18.582011 (Thread-1): SQL status: SUCCESS 1 in 4.71 seconds
+2021-06-28 13:26:18.582402 (Thread-1): Using snowflake connection "test.my_new_project.assert_city_exists".
+2021-06-28 13:26:18.582534 (Thread-1): On test.my_new_project.assert_city_exists: /* {"app": "dbt", "dbt_version": "0.20.0rc1", "profile_name": "default", "target_name": "dev", "node_id": "test.my_new_project.assert_city_exists"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      -- The city perth must exist in RAW or fail
+select
+    city
+from test_dbt.public.stg_customers
+WHERE city = "perth"
+      
+    ) dbt_internal_test
+2021-06-28 13:26:18.798981 (Thread-1): Snowflake query id: 019d3ae6-3200-51fd-0000-65a90004023a
+2021-06-28 13:26:18.799499 (Thread-1): Snowflake error: 000904 (42000): SQL compilation error: error line 10 at position 13
+invalid identifier '"perth"'
+2021-06-28 13:26:18.800135 (Thread-1): finished collecting timing info
+2021-06-28 13:26:18.800631 (Thread-1): On test.my_new_project.assert_city_exists: ROLLBACK
+2021-06-28 13:26:19.018539 (Thread-1): On test.my_new_project.assert_city_exists: Close
+2021-06-28 13:26:19.260247 (Thread-1): Database Error in test assert_city_exists (tests/assert_city_exists.sql)
+  000904 (42000): SQL compilation error: error line 10 at position 13
+  invalid identifier '"perth"'
+  compiled SQL at target/run/my_new_project/tests/assert_city_exists.sql
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 693, in execute
+    Error.errorhandler_wrapper(
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 000904 (42000): SQL compilation error: error line 10 at position 13
+invalid identifier '"perth"'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/task/test.py", line 112, in execute
+    result = self.execute_test(test, manifest)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/task/test.py", line 82, in execute_test
+    macro_func()
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 145, in macro
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 333, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/usr/local/Cellar/python@3.8/3.8.10/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt@0.20.0-rc1/0.20.0rc1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 196, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in test assert_city_exists (tests/assert_city_exists.sql)
+  000904 (42000): SQL compilation error: error line 10 at position 13
+  invalid identifier '"perth"'
+  compiled SQL at target/run/my_new_project/tests/assert_city_exists.sql
+2021-06-28 13:26:19.265513 (Thread-1): 21:26:19 | 1 of 3 ERROR assert_city_exists...................................... [ERROR in 5.43s]
+2021-06-28 13:26:19.265928 (Thread-1): Finished running node test.my_new_project.assert_city_exists
+2021-06-28 13:26:19.266312 (Thread-1): Began running node test.my_new_project.not_null_stg_customers_city.48dac9b3ab
+2021-06-28 13:26:19.267397 (Thread-1): 21:26:19 | 2 of 3 START test not_null_stg_customers_city........................ [RUN]
+2021-06-28 13:26:19.268399 (Thread-1): Acquiring new snowflake connection "test.my_new_project.not_null_stg_customers_city.48dac9b3ab".
+2021-06-28 13:26:19.268747 (Thread-1): Compiling test.my_new_project.not_null_stg_customers_city.48dac9b3ab
+2021-06-28 13:26:19.286836 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_stg_customers_city.48dac9b3ab"
+2021-06-28 13:26:19.288441 (Thread-1): finished collecting timing info
+2021-06-28 13:26:19.290528 (Thread-1): Writing runtime SQL for node "test.my_new_project.not_null_stg_customers_city.48dac9b3ab"
+2021-06-28 13:26:19.292457 (Thread-1): Using snowflake connection "test.my_new_project.not_null_stg_customers_city.48dac9b3ab".
+2021-06-28 13:26:19.292596 (Thread-1): On test.my_new_project.not_null_stg_customers_city.48dac9b3ab: BEGIN
+2021-06-28 13:26:19.292722 (Thread-1): Opening a new connection, currently in state closed
+2021-06-28 13:26:31.182203 (Thread-1): SQL status: SUCCESS 1 in 11.89 seconds
+2021-06-28 13:26:31.184318 (Thread-1): Using snowflake connection "test.my_new_project.not_null_stg_customers_city.48dac9b3ab".
+2021-06-28 13:26:31.184650 (Thread-1): On test.my_new_project.not_null_stg_customers_city.48dac9b3ab: /* {"app": "dbt", "dbt_version": "0.20.0rc1", "profile_name": "default", "target_name": "dev", "node_id": "test.my_new_project.not_null_stg_customers_city.48dac9b3ab"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select *
+from test_dbt.public.stg_customers
+where city is null
+
+
+
+      
+    ) dbt_internal_test
+2021-06-28 13:26:32.166188 (Thread-1): SQL status: SUCCESS 1 in 0.98 seconds
+2021-06-28 13:26:32.171673 (Thread-1): finished collecting timing info
+2021-06-28 13:26:32.172344 (Thread-1): On test.my_new_project.not_null_stg_customers_city.48dac9b3ab: ROLLBACK
+2021-06-28 13:26:32.346420 (Thread-1): On test.my_new_project.not_null_stg_customers_city.48dac9b3ab: Close
+2021-06-28 13:26:32.567079 (Thread-1): 21:26:32 | 2 of 3 PASS not_null_stg_customers_city.............................. [PASS in 13.30s]
+2021-06-28 13:26:32.567818 (Thread-1): Finished running node test.my_new_project.not_null_stg_customers_city.48dac9b3ab
+2021-06-28 13:26:32.568145 (Thread-1): Began running node test.my_new_project.unique_stg_customers_city.d7a01e6fd1
+2021-06-28 13:26:32.570584 (Thread-1): 21:26:32 | 3 of 3 START test unique_stg_customers_city.......................... [RUN]
+2021-06-28 13:26:32.571453 (Thread-1): Acquiring new snowflake connection "test.my_new_project.unique_stg_customers_city.d7a01e6fd1".
+2021-06-28 13:26:32.571724 (Thread-1): Compiling test.my_new_project.unique_stg_customers_city.d7a01e6fd1
+2021-06-28 13:26:32.588848 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_stg_customers_city.d7a01e6fd1"
+2021-06-28 13:26:32.589802 (Thread-1): finished collecting timing info
+2021-06-28 13:26:32.592881 (Thread-1): Writing runtime SQL for node "test.my_new_project.unique_stg_customers_city.d7a01e6fd1"
+2021-06-28 13:26:32.594668 (Thread-1): Using snowflake connection "test.my_new_project.unique_stg_customers_city.d7a01e6fd1".
+2021-06-28 13:26:32.594795 (Thread-1): On test.my_new_project.unique_stg_customers_city.d7a01e6fd1: BEGIN
+2021-06-28 13:26:32.594926 (Thread-1): Opening a new connection, currently in state closed
+2021-06-28 13:26:33.495228 (Thread-1): SQL status: SUCCESS 1 in 0.90 seconds
+2021-06-28 13:26:33.495723 (Thread-1): Using snowflake connection "test.my_new_project.unique_stg_customers_city.d7a01e6fd1".
+2021-06-28 13:26:33.495909 (Thread-1): On test.my_new_project.unique_stg_customers_city.d7a01e6fd1: /* {"app": "dbt", "dbt_version": "0.20.0rc1", "profile_name": "default", "target_name": "dev", "node_id": "test.my_new_project.unique_stg_customers_city.d7a01e6fd1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    city,
+    count(*) as n_records
+
+from test_dbt.public.stg_customers
+where city is not null
+group by city
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+2021-06-28 13:26:33.848850 (Thread-1): SQL status: SUCCESS 1 in 0.35 seconds
+2021-06-28 13:26:33.852217 (Thread-1): finished collecting timing info
+2021-06-28 13:26:33.852816 (Thread-1): On test.my_new_project.unique_stg_customers_city.d7a01e6fd1: ROLLBACK
+2021-06-28 13:26:34.120092 (Thread-1): On test.my_new_project.unique_stg_customers_city.d7a01e6fd1: Close
+2021-06-28 13:26:34.358916 (Thread-1): 21:26:34 | 3 of 3 FAIL 19 unique_stg_customers_city............................. [FAIL 19 in 1.79s]
+2021-06-28 13:26:34.359867 (Thread-1): Finished running node test.my_new_project.unique_stg_customers_city.d7a01e6fd1
+2021-06-28 13:26:34.367178 (MainThread): Acquiring new snowflake connection "master".
+2021-06-28 13:26:34.368313 (MainThread): 21:26:34 | 
+2021-06-28 13:26:34.368630 (MainThread): 21:26:34 | Finished running 3 tests in 26.97s.
+2021-06-28 13:26:34.368899 (MainThread): Connection 'master' was properly closed.
+2021-06-28 13:26:34.369086 (MainThread): Connection 'test.my_new_project.unique_stg_customers_city.d7a01e6fd1' was properly closed.
+2021-06-28 13:26:34.382890 (MainThread): 
+2021-06-28 13:26:34.383194 (MainThread): Completed with 2 errors and 0 warnings:
+2021-06-28 13:26:34.383397 (MainThread): 
+2021-06-28 13:26:34.383567 (MainThread): Database Error in test assert_city_exists (tests/assert_city_exists.sql)
+2021-06-28 13:26:34.383711 (MainThread):   000904 (42000): SQL compilation error: error line 10 at position 13
+2021-06-28 13:26:34.383842 (MainThread):   invalid identifier '"perth"'
+2021-06-28 13:26:34.383967 (MainThread):   compiled SQL at target/run/my_new_project/tests/assert_city_exists.sql
+2021-06-28 13:26:34.384096 (MainThread): 
+2021-06-28 13:26:34.384257 (MainThread): Failure in test unique_stg_customers_city (models/staging/customer_data/stg_cutomers.yml)
+2021-06-28 13:26:34.384391 (MainThread):   Got 19 results, configured to fail if != 0
+2021-06-28 13:26:34.384519 (MainThread): 
+2021-06-28 13:26:34.384652 (MainThread):   compiled SQL at target/compiled/my_new_project/models/staging/customer_data/stg_cutomers.yml/schema_test/unique_stg_customers_city.sql
+2021-06-28 13:26:34.384813 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=2 SKIP=0 TOTAL=3
+2021-06-28 13:26:34.385071 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a0c0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a4cd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a4c910>]}
+2021-06-28 13:26:34.385395 (MainThread): Flushing usage events
+2021-06-28 13:29:10.452133 (MainThread): Running with dbt=0.20.0-rc1
+2021-06-28 13:29:10.975891 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, defer=None, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/ashsmith/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='deps', write_json=True)
+2021-06-28 13:29:10.976314 (MainThread): Tracking: tracking
+2021-06-28 13:29:10.976444 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e74ed90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fa91130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fa91100>]}
+2021-06-28 13:29:10.977387 (MainThread): Set downloads directory='/var/folders/yp/tbsg69391dq6slx6526sqfn00000gn/T/dbt-downloads-rxblqk7t'
+2021-06-28 13:29:10.977514 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/index.json
+2021-06-28 13:29:11.501032 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/index.json 200
+2021-06-28 13:29:11.502293 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json
+2021-06-28 13:29:11.870099 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json 200
+2021-06-28 13:29:11.879037 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.7.0.json
+2021-06-28 13:29:12.369506 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.7.0.json 200
+2021-06-28 13:29:12.370615 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json
+2021-06-28 13:29:12.712797 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json 200
+2021-06-28 13:29:12.721914 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.7.0.json
+2021-06-28 13:29:13.208791 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.7.0.json 200
+2021-06-28 13:29:13.210222 (MainThread): Installing fishtown-analytics/dbt_utils@0.7.0
+2021-06-28 13:29:13.948721 (MainThread):   Installed from version 0.7.0
+2021-06-28 13:29:13.948916 (MainThread): Sending event: {'category': 'dbt', 'action': 'package', 'label': '1117784f-89ec-4e86-b38f-d6bc2bff9479', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fa91e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fa91e80>]}
+2021-06-28 13:29:13.949438 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10faef9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10faefdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e74ed90>]}
+2021-06-28 13:29:13.949561 (MainThread): Flushing usage events
